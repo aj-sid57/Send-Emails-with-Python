@@ -1,0 +1,11 @@
+import smtplib
+import csv
+from string import Template
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+MY_ADDRESS = *********@gmail.com  #your gmail account address
+PASSWORD = ***********           #your password
+s = smtplib.SMTP(host=’smtp.gmail.com’, port=587)
+s.starttls()
+s.login(MY_ADDRESS, PASSWORD)
